@@ -1,0 +1,21 @@
+{
+    "name": "aledefreitas/eloquent-repositories",
+    "description": "Repositories pattern to applications using Eloquent",
+    "type": "library",
+    "license": "APACHE2.0",
+    "authors": [
+        {
+            "name": "Alexandre Caetano",
+            "email": "alexandrefc2@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0",
+        "illuminate/database": "*"
+    },
+    "autoload": {
+       "psr-4": {
+           "Aledefreitas\\EloquentRepositories": "src/",
+       }
+    }
+}
