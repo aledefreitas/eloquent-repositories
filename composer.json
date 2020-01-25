@@ -15,7 +15,7 @@
     },
     "autoload": {
        "psr-4": {
-           "Aledefreitas\\EloquentRepositories": "src/",
+           "Aledefreitas\\EloquentRepositories": "src/"
        }
     }
 }
