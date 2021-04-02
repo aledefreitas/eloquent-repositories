@@ -22,4 +22,26 @@ trait Update
 
         return $entity;
     }
+
+    /**
+     * Upserts a record
+     *
+     * @param  array  $data
+     *
+     * @return \Illuminate\Database\Eloquent\Model
+     */
+    public function upsert(array $data = [])
+    {
+        $id = $data[$this->model->getKeyName()];
+        unset($data[$this->model->getKeyName()]);
+
+        if (!isset($id)) {
+            return $this->model::create($data);
+        }
+
+        return $this->update(
+            $id,
+            $data
+        );
+    }
 }
