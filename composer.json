@@ -2,7 +2,7 @@
     "name": "aledefreitas/eloquent-repositories",
     "description": "Repositories pattern to applications using Eloquent",
     "type": "library",
-    "license": "APACHE2.0",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "Alexandre Caetano",
